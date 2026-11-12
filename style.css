@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fffaf4;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 36px 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #bd6547;
+}
+
+header p,
+footer p {
+  color: #666;
+}
+
+main {
+  display: grid;
+  max-width: 960px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #eadfd3;
+  border-radius: 10px;
+  background: white;
+}
+
+.profile-img {
+  width: 100%;
+  height: 190px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.subheading {
+  margin-bottom: 8px;
+  color: #bd6547;
+}
+
+.about span {
+  font-weight: bold;
+}
+
+.tag {
+  display: inline-block;
+  margin: 4px 2px 0 0;
+  padding: 6px 10px;
+  border-radius: 16px;
+  background: #f7eee5;
+  font-size: 14px;
+}
+
+.contact a {
+  color: #8d4a34;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}
